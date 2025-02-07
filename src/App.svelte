@@ -14,7 +14,7 @@
   let scroller;
   let step;
   let graphic;
-  let layoutMode = $state('overlay'); // New state for layout control
+  let layoutMode = $state('overlay');
   let showWelcome = $state(true);
   let currentViz = $state(null);
   let transitioning = $state(false);
@@ -25,11 +25,11 @@
   });
   let currentLevel = $state('nuts2');
   let mapTooltip = $state(null);
-  let radarMode = $state('radar');  // Add this with other state variables
+  let radarMode = $state('radar');
   let tweenCircleMode = $state(false);
-  let originalPaths = $state(new Map());  // Store original paths for each feature
+  let originalPaths = $state(new Map());
   let scatterMode = $state(false);
-  let previousStep = $state(0);  // Add this state variable at the top
+  let previousStep = $state(0);
   
   const data = [
     { year: 2010, value: 10 },
